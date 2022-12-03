@@ -11,6 +11,12 @@ header{
     margin-top: 100px;
 }
 
+@media screen and (max-width: 992px) {
+    header{
+        width: 900px;
+    }
+}
+
 header>a.logo{
     display: inline-block;
     font: normal 30px/57px 'PoppinsB';
@@ -77,6 +83,14 @@ main{
     background-image: url('../img/img_mobile.png');
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: 300px;
+}
+
+@media screen and (max-width: 992px) {
+    main{
+        width: 900px;
+        padding-top: 100px;
+    }
 }
 
 main>aside{
@@ -235,4 +249,18 @@ footer#main_page address{
     width: inherit;
     text-align: center;
     margin-top: 100px;
+}
+
+/* Для отображения ширины экрана*/
+div#size_of_screen{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    height: 25px;
+    background-color: brown;
+    border-radius: 5px;
+    font: normal 25px/25px 'PoppinsR';
+    text-align: center;
+    color:rgb(255, 255, 255);
 }
