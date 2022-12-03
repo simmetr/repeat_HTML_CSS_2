@@ -11,6 +11,7 @@ header{
     margin-top: 100px;
 }
 
+/* При ширине 992px*/
 @media screen and (max-width: 992px) {
     header{
         width: 900px;
@@ -47,6 +48,42 @@ header>nav>a{
     margin-right: 37px;
 }
 
+/* При ширине 768px*/
+@media screen and (max-width: 992px) {
+    header{
+        width: 700px;
+    }
+
+    header>nav{
+        width: 565px;
+    }
+
+    header>nav>a{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    header>a.logo{
+        font-size: 20px;
+    }
+    
+    header>nav>button{
+        margin-top: 7px;
+    }
+}
+
+/* Тест для мобильных устройств
+@media screen and (pointer: coarse) and (orientation: portrait){
+    @font-face {
+        font-family: 'PoppinsB';
+        src: url('../fonts/Poppins/Poppins-Bold.ttf');
+    }    
+    header>nav>a{
+        font-family: 'PoppinsB';
+        color: red;
+    }
+}*/
+
 header>nav>a:last-child{
     margin-right: 0;
 }
@@ -74,6 +111,15 @@ header>nav>a:hover{
     font: normal 16px 'PoppinsB';
 }
 
+/* При ширине в 798px*/
+@media screen and (max-width: 7982px) {
+    .btn{
+        width: 130px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
 main{
     width: 1030px;
     height: 730px;
@@ -83,13 +129,25 @@ main{
     background-image: url('../img/img_mobile.png');
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 300px;
 }
 
+/* При ширине в 992px*/
 @media screen and (max-width: 992px) {
     main{
         width: 900px;
         padding-top: 100px;
+        background-size: 300px;
+    }
+}
+
+/* При ширине в 798px*/
+@media screen and (max-width: 992px) {
+    main{
+        width: 700px;
+        height: 500px;
+        padding-top: 100px;
+        background-size: 200px;
+        padding-top: 10px;
     }
 }
 
@@ -101,6 +159,19 @@ main>aside{
     background-color: rgb(226,234,237);
     font: normal 16px 'PoppinsR';
 }
+
+/* При ширине в 798px*/
+@media screen and (max-width: 798px) {
+    main>aside{
+        width: 260px;
+        height: 25px;
+        border-radius: 12px;
+        border: none;
+        background-color: rgb(226,234,237);
+        font: normal 12px 'PoppinsR';   
+    }
+}
+
 main>aside>span{
     display: inline-block;
     width: 35px;
@@ -111,6 +182,21 @@ main>aside>span{
     font: normal 18px/35px 'PoppinsR';
     text-align: center;
     margin-right: 10px;
+}
+
+/* При ширине в 798px*/
+@media screen and (max-width: 798px){
+    main>aside>span{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 12px;
+        border: none;
+        background-color: rgb(254,170,37);
+        font: normal 12px/25px 'PoppinsR';
+        text-align: center;
+        margin-right: 10px;
+    }
 }
 
 @font-face {
@@ -126,12 +212,30 @@ main>h2{
     margin-top: 30px;
 }
 
+/* При ширине в 798px*/
+@media screen and (max-width: 798px){
+    main>h2{
+        font-size: 50px;
+        line-height: 60px;
+        width: 400px;
+    }
+}
+
 main>p{
     display: inline-block;
     font: normal 18px/28px 'PoppinsR';
     width: 530px;
     color: rgb(97,99,104);
     margin: 35px 0;
+}
+
+/* При ширине в 798px*/
+@media screen and (max-width: 798px){
+    main>p{
+        font: normal 12px/22px 'PoppinsR';
+        width: 375px;
+        margin: 20px 0;
+    }
 }
 
 main>footer>button{
@@ -142,6 +246,13 @@ main>footer>a{
     text-decoration: none;
     color: rgb(37,0,249);
     font: normal 16px 'PoppinsR';
+}
+
+/* При ширине в 798px*/
+@media screen and (max-width: 798px){
+    main>footer>a{
+        font-size: 12px;
+    }
 }
 
 main>footer>a:hover{
@@ -155,11 +266,26 @@ body{
     background-position: center 840px;
 }
 
+/* При ширине в 798px*/
+@media screen and (max-width: 798px){
+    body{
+        background-position: center 600px;
+    }
+}
+
 footer#main_page{
     width: 100%;
     height: 530px;
     background-color: rgb(9,20,46);
     padding-top: 120px;
+}
+
+/* При ширине в 798px*/
+@media screen and (max-width: 798px){
+    footer#main_page{
+        height: 300px;
+        padding-top: 60px;
+    }
 }
 
 footer#main_page>div#innder_cntr{
@@ -249,6 +375,13 @@ footer#main_page address{
     width: inherit;
     text-align: center;
     margin-top: 100px;
+}
+
+/* При ширине в 798px*/
+@media screen and (max-width: 798px){
+    footer#main_page address{
+        margin-top: 35px;
+    }
 }
 
 /* Для отображения ширины экрана*/
