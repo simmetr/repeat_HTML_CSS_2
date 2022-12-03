@@ -45,5 +45,17 @@
             <address>Copyright© Arifur Rahman Tushar 2019. All rights reserved</address>
         </div>
     </footer>
+
+    <!--для отображения ширины экрана-->
+    <div id="size_of_screen"></div>
+    <script>        
+        start();
+        window.addEventListener('resize', start);
+
+        function start(){
+            document.getElementById('size_of_screen').innerText = document.documentElement.clientWidth+15;
+        }
+    </script>
+
 </body>
 </html>
