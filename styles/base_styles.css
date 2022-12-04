@@ -1,15 +1,234 @@
+/* Убираем свойста по-умолчанию*/
 *{
     margin: 0;
     padding: 0;
     outline: 0;
 }
 
+/* Стилизуем шапку*/
 header{
     width: 1030px;
     height: 57px;
     margin: 0 auto;
     margin-top: 100px;
 }
+
+/* Стилизуем логотип*/
+header>a.logo{
+    display: inline-block;
+    font: normal 30px/57px 'PoppinsB';
+    color: rgb(252,174,97);
+    text-decoration: none;
+}
+header>a.logo>span{
+    color: rgb(36,47,81);
+}
+
+/* Стилизуем панель ссылок в шапке*/
+header>nav{
+    width: 700px;
+    height: inherit;
+    float: right;
+}
+@font-face {
+    font-family: 'PoppinsR';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+header>nav>a{
+    text-decoration: none;
+    color: rgb(36,47,81);
+    display: inline-block;
+    font: normal 16px/57px 'PoppinsR';
+    margin-right: 37px;
+}
+header>nav>a:last-child{
+    margin-right: 0;
+}
+header>nav>button{
+    float: right;
+}
+header>nav>a:hover{
+    text-decoration: underline;
+}
+@font-face {
+    font-family: 'PoppinsB';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+/* Единое оформление для всех кнопок*/
+.btn{
+    width: 170px;
+    height: 57px;
+    border-radius: 28px;
+    border: none;
+    background-color: rgb(37,0,250);
+    color: rgb(255,255,255);
+    font: normal 16px 'PoppinsB';
+}
+
+/* "Центр" страницы*/
+main{
+    width: 1030px;
+    height: 730px;
+    margin: 0 auto;
+    margin-top: 55px;
+    padding-top: 190px;
+    background-image: url('../img/img_mobile.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+main>aside{
+    width: 360px;
+    height: 35px;
+    border-radius: 17px;
+    border: none;
+    background-color: rgb(226,234,237);
+    font: normal 16px 'PoppinsR';
+}
+main>aside>span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    border: none;
+    background-color: rgb(254,170,37);
+    font: normal 18px/35px 'PoppinsR';
+    text-align: center;
+    margin-right: 10px;
+}
+@font-face {
+    font-family: 'PoppinsSB';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+main>h2{
+    font: normal 60px/75px 'PoppinsSB';
+    color: rgb(36,47,81);
+    display: inline-block;
+    width: 530px;
+    margin-top: 30px;
+}
+main>p{
+    display: inline-block;
+    font: normal 18px/28px 'PoppinsR';
+    width: 530px;
+    color: rgb(97,99,104);
+    margin: 35px 0;
+}
+main>footer>button{
+    margin-right: 30px;
+}
+main>footer>a{
+    text-decoration: none;
+    color: rgb(37,0,249);
+    font: normal 16px 'PoppinsR';
+}
+main>footer>a:hover{
+    text-decoration: underline;
+}
+body{
+    background-image: url('../img/big_city.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 840px;
+}
+
+/* Стилизуем "подвал"*/
+footer#main_page{
+    width: 100%;
+    height: 530px;
+    background-color: rgb(9,20,46);
+    padding-top: 120px;
+}
+footer#main_page>div#innder_cntr{
+    width: 460px;
+    height: 280px;
+    margin: 0 auto;
+}
+footer#main_page>div#innder_cntr>a.logo{
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    font: normal 30px/57px 'PoppinsB';
+    color: rgb(252,174,97);
+    text-decoration: none;
+}
+footer#main_page>div#innder_cntr>a.logo>span{
+    color: rgb(255, 255, 255);
+}
+nav#menu{
+    width: inherit;
+    margin-top: 60px;
+}
+nav#menu>a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    font: normal 16px 'PoppinsR';
+    margin-right: 30px;
+}
+nav#menu>a:last-child{
+    margin-right: 0;
+}
+nav#menu>a:hover{
+    text-decoration: underline;
+}
+nav#footer{
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+nav#footer>a{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav#footer>a:last-child{
+    margin-right: 0;
+}
+nav#footer>a>img{
+    width: 36px;
+}
+.icons_hover:hover{
+    width: 36px;
+    transition: .2s;
+}
+nav#footer>a#go_to_facebook:hover{
+    content: url('../img/icons/facebook-hover.png');
+}
+nav#footer>a#go_to_twitter:hover{
+    content: url('../img/icons/twitter-hover.png');
+}
+nav#footer>a#go_to_slack:hover{
+    content: url('../img/icons/slack-hover.png');
+}
+nav#footer>a#go_to_github:hover{
+    content: url('../img/icons/github-hover.png');
+}
+footer#main_page address{
+    font: normal 14px 'PoppinsR';
+    color: rgb(61,70,90);
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Для отображения ширины экрана*/
+div#size_of_screen{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    height: 25px;
+    background-color: brown;
+    border-radius: 5px;
+    font: normal 25px/25px 'PoppinsR';
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+/*################################################################################*/
+/*###########################ГРАНИЦА АДАПТИВНОЙ ВЁРСТКИ###########################*/
+/*################################################################################*/
 
 /* При ширине 992px*/
 @media screen and (max-width: 992px) {
@@ -18,34 +237,68 @@ header{
     }
 }
 
-header>a.logo{
-    display: inline-block;
-    font: normal 30px/57px 'PoppinsB';
-    color: rgb(252,174,97);
-    text-decoration: none;
+/* Тест для мобильных устройств
+@media screen and (pointer: coarse) and (orientation: portrait){
+    @font-face {
+        font-family: 'PoppinsB';
+        src: url('../fonts/Poppins/Poppins-Bold.ttf');
+    }    
+    header>nav>a{
+        font-family: 'PoppinsB';
+        color: red;
+    }
+}*/
+
+/* При ширине в 992px*/
+@media screen and (max-width: 992px) {
+    main{
+        width: 900px;
+        padding-top: 100px;
+        background-size: 300px;
+    }
 }
 
-header>a.logo>span{
-    color: rgb(36,47,81);
+/* При ширине в 768px*/
+@media screen and (max-width: 768px){
+    footer#main_page{
+        height: 300px;
+        padding-top: 60px;
+    }
 }
 
-header>nav{
-    width: 700px;
-    height: inherit;
-    float: right;
+/* При ширине в 768px*/
+@media screen and (max-width: 768px){
+    body{
+        background-position: center 600px;
+    }
 }
 
-@font-face {
-    font-family: 'PoppinsR';
-    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+/* При ширине в 768px*/
+@media screen and (max-width: 768px){
+    footer#main_page address{
+        margin-top: 35px;
+    }
 }
 
-header>nav>a{
-    text-decoration: none;
-    color: rgb(36,47,81);
-    display: inline-block;
-    font: normal 16px/57px 'PoppinsR';
-    margin-right: 37px;
+/* При ширине в 768px*/
+@media screen and (max-width: 768px){
+    main>p{
+        font: normal 12px/22px 'PoppinsR';
+        width: 375px;
+        margin: 20px 0;
+    }
+}
+
+/* При ширине в 768px*/
+@media screen and (max-width: 768px) {
+    main>aside{
+        width: 260px;
+        height: 25px;
+        border-radius: 12px;
+        border: none;
+        background-color: rgb(226,234,237);
+        font: normal 12px 'PoppinsR';   
+    }
 }
 
 /* При ширине 768px*/
@@ -72,75 +325,7 @@ header>nav>a{
     }
 }
 
-/* Тест для мобильных устройств
-@media screen and (pointer: coarse) and (orientation: portrait){
-    @font-face {
-        font-family: 'PoppinsB';
-        src: url('../fonts/Poppins/Poppins-Bold.ttf');
-    }    
-    header>nav>a{
-        font-family: 'PoppinsB';
-        color: red;
-    }
-}*/
-
-header>nav>a:last-child{
-    margin-right: 0;
-}
-
-header>nav>button{
-    float: right;
-}
-
-header>nav>a:hover{
-    text-decoration: underline;
-}
-
-@font-face {
-    font-family: 'PoppinsB';
-    src: url('../fonts/Poppins/Poppins-Bold.ttf');
-}
-
-.btn{
-    width: 170px;
-    height: 57px;
-    border-radius: 28px;
-    border: none;
-    background-color: rgb(37,0,250);
-    color: rgb(255,255,255);
-    font: normal 16px 'PoppinsB';
-}
-
-/* При ширине в 798px*/
-@media screen and (max-width: 7982px) {
-    .btn{
-        width: 130px;
-        height: 40px;
-        font-size: 12px;
-    }
-}
-
-main{
-    width: 1030px;
-    height: 730px;
-    margin: 0 auto;
-    margin-top: 55px;
-    padding-top: 190px;
-    background-image: url('../img/img_mobile.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-}
-
-/* При ширине в 992px*/
-@media screen and (max-width: 992px) {
-    main{
-        width: 900px;
-        padding-top: 100px;
-        background-size: 300px;
-    }
-}
-
-/* При ширине в 798px*/
+/* При ширине в 768px*/
 @media screen and (max-width: 992px) {
     main{
         width: 700px;
@@ -151,41 +336,33 @@ main{
     }
 }
 
-main>aside{
-    width: 360px;
-    height: 35px;
-    border-radius: 17px;
-    border: none;
-    background-color: rgb(226,234,237);
-    font: normal 16px 'PoppinsR';
-}
-
-/* При ширине в 798px*/
-@media screen and (max-width: 798px) {
-    main>aside{
-        width: 260px;
-        height: 25px;
-        border-radius: 12px;
-        border: none;
-        background-color: rgb(226,234,237);
-        font: normal 12px 'PoppinsR';   
+/* При ширине в 768px*/
+@media screen and (max-width: 7682px) {
+    .btn{
+        width: 130px;
+        height: 40px;
+        font-size: 12px;
     }
 }
 
-main>aside>span{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    border-radius: 17px;
-    border: none;
-    background-color: rgb(254,170,37);
-    font: normal 18px/35px 'PoppinsR';
-    text-align: center;
-    margin-right: 10px;
+/* При ширине в 768px*/
+@media screen and (max-width: 768px){
+    main>h2{
+        font-size: 50px;
+        line-height: 60px;
+        width: 400px;
+    }
 }
 
-/* При ширине в 798px*/
-@media screen and (max-width: 798px){
+/* При ширине в 768px*/
+@media screen and (max-width: 768px){
+    main>footer>a{
+        font-size: 12px;
+    }
+}
+
+/* При ширине в 768px*/
+@media screen and (max-width: 768px){
     main>aside>span{
         display: inline-block;
         width: 25px;
@@ -199,201 +376,51 @@ main>aside>span{
     }
 }
 
-@font-face {
-    font-family: 'PoppinsSB';
-    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
-}
+/* При ширине 576px*/
+@media screen and (max-width: 576px) {
+    header{
+        width: 500px;
+    }
 
-main>h2{
-    font: normal 60px/75px 'PoppinsSB';
-    color: rgb(36,47,81);
-    display: inline-block;
-    width: 530px;
-    margin-top: 30px;
-}
+    header>nav{
+        width: 500px;
+    }
 
-/* При ширине в 798px*/
-@media screen and (max-width: 798px){
+    header>a.logo{
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -110px;
+        font: normal 60px 'PoppinsB';
+    }
+
+    .btn{
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    header>nav>button{
+        margin-top: 13px;
+    }
+
+    main{
+        width: 500px;
+        padding-top: 35px;
+    }
+
     main>h2{
-        font-size: 50px;
-        line-height: 60px;
-        width: 400px;
+        width: 300px;
+        font-size: 35px;
+        line-height: 40px;
+        margin-top: 20px;
     }
-}
-
-main>p{
-    display: inline-block;
-    font: normal 18px/28px 'PoppinsR';
-    width: 530px;
-    color: rgb(97,99,104);
-    margin: 35px 0;
-}
-
-/* При ширине в 798px*/
-@media screen and (max-width: 798px){
+    
     main>p{
-        font: normal 12px/22px 'PoppinsR';
-        width: 375px;
-        margin: 20px 0;
+        width: 275px;
     }
-}
 
-main>footer>button{
-    margin-right: 30px;
-}
-
-main>footer>a{
-    text-decoration: none;
-    color: rgb(37,0,249);
-    font: normal 16px 'PoppinsR';
-}
-
-/* При ширине в 798px*/
-@media screen and (max-width: 798px){
-    main>footer>a{
-        font-size: 12px;
+    bodY{
+        background-position: center 660px;
     }
-}
-
-main>footer>a:hover{
-    text-decoration: underline;
-}
-
-body{
-    background-image: url('../img/big_city.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center 840px;
-}
-
-/* При ширине в 798px*/
-@media screen and (max-width: 798px){
-    body{
-        background-position: center 600px;
-    }
-}
-
-footer#main_page{
-    width: 100%;
-    height: 530px;
-    background-color: rgb(9,20,46);
-    padding-top: 120px;
-}
-
-/* При ширине в 798px*/
-@media screen and (max-width: 798px){
-    footer#main_page{
-        height: 300px;
-        padding-top: 60px;
-    }
-}
-
-footer#main_page>div#innder_cntr{
-    width: 460px;
-    height: 280px;
-    margin: 0 auto;
-}
-
-footer#main_page>div#innder_cntr>a.logo{
-    display: inline-block;
-    width: inherit;
-    text-align: center;
-    font: normal 30px/57px 'PoppinsB';
-    color: rgb(252,174,97);
-    text-decoration: none;
-}
-
-footer#main_page>div#innder_cntr>a.logo>span{
-    color: rgb(255, 255, 255);
-}
-
-nav#menu{
-    width: inherit;
-    margin-top: 60px;
-}
-
-nav#menu>a{
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(255,255,255);
-    font: normal 16px 'PoppinsR';
-    margin-right: 30px;
-}
-
-nav#menu>a:last-child{
-    margin-right: 0;
-}
-
-nav#menu>a:hover{
-    text-decoration: underline;
-}
-
-nav#footer{
-    width: 220px;
-    margin: 0 auto;
-    margin-top: 55px;
-}
-
-nav#footer>a{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav#footer>a:last-child{
-    margin-right: 0;
-}
-
-nav#footer>a>img{
-    width: 36px;
-}
-
-.icons_hover:hover{
-    width: 36px;
-    transition: .2s;
-}
-
-nav#footer>a#go_to_facebook:hover{
-    content: url('../img/icons/facebook-hover.png');
-}
-
-nav#footer>a#go_to_twitter:hover{
-    content: url('../img/icons/twitter-hover.png');
-}
-
-nav#footer>a#go_to_slack:hover{
-    content: url('../img/icons/slack-hover.png');
-}
-
-nav#footer>a#go_to_github:hover{
-    content: url('../img/icons/github-hover.png');
-}
-
-footer#main_page address{
-    font: normal 14px 'PoppinsR';
-    color: rgb(61,70,90);
-    display: inline-block;
-    width: inherit;
-    text-align: center;
-    margin-top: 100px;
-}
-
-/* При ширине в 798px*/
-@media screen and (max-width: 798px){
-    footer#main_page address{
-        margin-top: 35px;
-    }
-}
-
-/* Для отображения ширины экрана*/
-div#size_of_screen{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 100px;
-    height: 25px;
-    background-color: brown;
-    border-radius: 5px;
-    font: normal 25px/25px 'PoppinsR';
-    text-align: center;
-    color:rgb(255, 255, 255);
 }
