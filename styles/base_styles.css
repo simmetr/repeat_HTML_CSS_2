@@ -235,22 +235,7 @@ div#size_of_screen{
     header{
         width: 900px;
     }
-}
 
-/* Тест для мобильных устройств
-@media screen and (pointer: coarse) and (orientation: portrait){
-    @font-face {
-        font-family: 'PoppinsB';
-        src: url('../fonts/Poppins/Poppins-Bold.ttf');
-    }    
-    header>nav>a{
-        font-family: 'PoppinsB';
-        color: red;
-    }
-}*/
-
-/* При ширине в 992px*/
-@media screen and (max-width: 992px) {
     main{
         width: 900px;
         padding-top: 100px;
@@ -260,49 +245,10 @@ div#size_of_screen{
 
 /* При ширине в 768px*/
 @media screen and (max-width: 768px){
-    footer#main_page{
-        height: 300px;
-        padding-top: 60px;
-    }
-}
-
-/* При ширине в 768px*/
-@media screen and (max-width: 768px){
     body{
         background-position: center 600px;
     }
-}
-
-/* При ширине в 768px*/
-@media screen and (max-width: 768px){
-    footer#main_page address{
-        margin-top: 35px;
-    }
-}
-
-/* При ширине в 768px*/
-@media screen and (max-width: 768px){
-    main>p{
-        font: normal 12px/22px 'PoppinsR';
-        width: 375px;
-        margin: 20px 0;
-    }
-}
-
-/* При ширине в 768px*/
-@media screen and (max-width: 768px) {
-    main>aside{
-        width: 260px;
-        height: 25px;
-        border-radius: 12px;
-        border: none;
-        background-color: rgb(226,234,237);
-        font: normal 12px 'PoppinsR';   
-    }
-}
-
-/* При ширине 768px*/
-@media screen and (max-width: 992px) {
+    
     header{
         width: 700px;
     }
@@ -323,10 +269,13 @@ div#size_of_screen{
     header>nav>button{
         margin-top: 7px;
     }
-}
-
-/* При ширине в 768px*/
-@media screen and (max-width: 992px) {
+    
+    .btn{
+        width: 130px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
     main{
         width: 700px;
         height: 500px;
@@ -334,35 +283,22 @@ div#size_of_screen{
         background-size: 200px;
         padding-top: 10px;
     }
-}
 
-/* При ширине в 768px*/
-@media screen and (max-width: 7682px) {
-    .btn{
-        width: 130px;
-        height: 40px;
-        font-size: 12px;
-    }
-}
-
-/* При ширине в 768px*/
-@media screen and (max-width: 768px){
     main>h2{
         font-size: 50px;
         line-height: 60px;
         width: 400px;
     }
-}
-
-/* При ширине в 768px*/
-@media screen and (max-width: 768px){
-    main>footer>a{
-        font-size: 12px;
+    
+    main>aside{
+        width: 260px;
+        height: 25px;
+        border-radius: 12px;
+        border: none;
+        background-color: rgb(226,234,237);
+        font: normal 12px 'PoppinsR';   
     }
-}
 
-/* При ширине в 768px*/
-@media screen and (max-width: 768px){
     main>aside>span{
         display: inline-block;
         width: 25px;
@@ -373,6 +309,25 @@ div#size_of_screen{
         font: normal 12px/25px 'PoppinsR';
         text-align: center;
         margin-right: 10px;
+    }
+
+    main>p{
+        font: normal 12px/22px 'PoppinsR';
+        width: 375px;
+        margin: 20px 0;
+    }
+
+    main>footer>a{
+        font-size: 12px;
+    }
+
+    footer#main_page{
+        height: 300px;
+        padding-top: 60px;
+    }
+
+    footer#main_page address{
+        margin-top: 35px;
     }
 }
 
@@ -420,7 +375,94 @@ div#size_of_screen{
         width: 275px;
     }
 
-    bodY{
+    body{
         background-position: center 660px;
+    }
+}
+
+/* При ширине 376px*/
+@media screen and (min-width: 376px) and (max-width: 576px){
+    header>nav>a{
+        margin-right: 0;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .try{
+        display: none;
+    }
+
+    main{
+        width: 350px;
+        margin-top: 150px;
+        background: none;
+        padding-top: 0;
+        height: 300px;
+    }
+
+    main>aside{
+        margin: 0 auto;
+    }
+
+    main>h2{
+        width: inherit;
+        text-align: justify;
+    }
+
+    main>p{
+        display: inline-block;
+        width: 300px;
+        position: relative;
+        left: 50%;
+        margin-left: -150px;
+    }
+
+    .bottom{
+        display: inline-block;
+    }
+
+    main>footer{
+        width: inherit;
+    }
+
+    main>footer>button.bottom{
+        width: 125px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 30px;
+    }
+
+    main>footer>a{
+        margin-left: 0;
+    }
+}
+
+/* Тест для мобильных устройств*/
+@media screen and (pointer: coarse){
+    @font-face {
+        font-family: 'PoppinsBM';
+        src: url('../fonts/Poppins/Poppins-Bold.ttf');
+    }   
+    
+    header>nav{
+        position: relative;
+        top: 50px;
+    }
+
+    header>nav>a{
+        font-size: 35px;
+        font-family: 'PoppinsBM';
+        margin-bottom: 20px;
+    }
+
+    main{
+        margin-top: 300px;
+    }
+
+    body{
+        background-position: center 685px;
     }
 }
